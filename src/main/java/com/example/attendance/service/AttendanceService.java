@@ -16,16 +16,16 @@ public class AttendanceService {
 
     public void generateDailyReport() {
         List<Attendance> all = attendanceRepository.findAll();
-        System.out.println("✅ Daily attendance entries: " + all.size());
+        System.out.println("Daily attendance entries: " + all.size());
     }
 
     public void archiveOldAttendance() {
-        System.out.println("📦 Archiving old attendance data...");
+        System.out.println("Archiving old attendance data...");
     }
 
     public void detectAnomalies() {
         List<Attendance> absent = attendanceRepository.findAllByStatus("ABSENT");
-        System.out.println("🚨 Absent entries: " + absent.size());
+        System.out.println("Absent entries: " + absent.size());
     }
 
     public void calculateSalaryAdjustments() {

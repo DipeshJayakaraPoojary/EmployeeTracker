@@ -31,3 +31,27 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Java
+*.class
+*.jar
+*.war
+*.log
+
+# Maven
+/target/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log

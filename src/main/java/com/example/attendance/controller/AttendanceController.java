@@ -25,4 +25,5 @@ public class AttendanceController {
     public Attendance createAttendance(@RequestBody Attendance attendance) {
         return attendanceRepository.save(attendance);
     }
+
 }
